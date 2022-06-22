@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+    <h1>首页</h1>
+    <a th:href="@{/hello}">HelloWorld</a><br/>
+
+    <a th:href="@{/testRequestMapping}">测试@RequestMapping的value属性testRequestMapping</a><br>
+    <a th:href="@{/test}">测试@RequestMapping的value属性</a><br>
+
+    <a th:href="@{/testRequestApi}">向request域对象共享数据</a><br>
+    <form th:action="@{/postTest}" method="post">
+        <input type="submit">
+    </form>
+
+    <a th:href="@{/testParam(username='admin',password='123456')}">测试@RequestMapping的params属性</a><br>
+
+    <a th:href="@{/testRest/1/admin}">测试路径中的占位符</a><br>
+
+    <a th:href="@{/testParam2(username='guanghongfan',password='18518788787')}">通过ServletAPI获取请求参数</a><br>
+    <a th:href="@{/testParam3(username='guanghongfan',password='18518788787')}">通过控制器方法的形参获取请求参数</a><br>
+    <a th:href="@{/testParam4(username='guanghongfan',password='18518788787')}">@RequestParam</a><br>
+
+    <a th:href="@{/testServletAPI}">使用ServletAPI向request域对象共享数据</a><br>
+    <a th:href="@{/testModelAndView}">使用ModelAndView向request域对象共享数据</a><br>
+    <a th:href="@{/testModel}">使用Model向request域对象共享数据</a><br>
+    <a th:href="@{/testMap}">使用map向request域对象共享数据</a><br>
+    <a th:href="@{/testModelMap}">使用map向request域对象共享数据</a><br>
+    <a th:href="@{/testSession}">向session域共享数据</a><br>
+    <a th:href="@{/testApplication}">向application域共享数据</a><br>
+
+</body>
+</html>
