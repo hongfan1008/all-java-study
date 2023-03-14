@@ -1,0 +1,6 @@
+servers:
+  ipAddress: 192.136.1.29
+  port: 5252
+  timeout: 10000000
+datasource:
+  driverClassName: com.mysql.jdbc.Driver123456

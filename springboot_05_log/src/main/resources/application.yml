@@ -1,0 +1,14 @@
+
+logging:
+  level:
+    root: info
+  file:
+    name: server.log
+server:
+  port: 3232
+spring:
+  devtools:
+    restart:
+      enabled: true
+      #设置不参与部署的文件或者文件 夹
+      exclude: application.yml

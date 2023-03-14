@@ -33,6 +33,7 @@
         此时必须设置<mvc:annotation-driven/>解决问题
     -->
     <mvc:default-servlet-handler/>
+    <mvc:view-controller path="/testcss" view-name="collect"></mvc:view-controller>
     <!-- 开启mvc注解驱动 -->
     <mvc:annotation-driven>
         <mvc:message-converters>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript">
+    var arr = [true,1];
+    // alert( arr.length ); // 0
+    console.log(arr.length); //2
+    arr[0] = 12;
+    // alert( arr[0] );//12
+    console.log(arr[0]); //12
+    // alert( arr.length ); // 0
+    console.log(arr.length); //2
+    // javaScript 语言中的数组，只要我们通过数组下标赋值，那么最大的下标值，就会自动的给数组做扩容操作。
+    arr[2] = "abc";
+    console.log(arr.length); //3
+    // alert(arr.length); //3
+    // alert(arr[1]);// undefined
+    console.log(arr[1]);//1
+    // 数组的遍历
+    for (var i = 0; i < arr.length; i++){
+        // alert(arr[i]);
+        console.log(arr[1])
+    }
+
+</script>
+<body>
+
+</body>
+
+</html>

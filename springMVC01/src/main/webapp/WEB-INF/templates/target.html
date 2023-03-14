@@ -5,10 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<h1>hello springmvc</h1>
+<!--<h1>今天天气好晴朗，处处好风光</h1>-->
 
-
-<p th:text="${testRequestScope}"></p>
+remotePort:<p th:text="${remotePort}"></p>
+requestIp:<p th:text="${requestIp}"></p>
+browserVersion:<p th:text="${browserVersion}"></p>
+osName:<p th:text="${osName}"></p>
+browserName:<p th:text="${browserName}"></p>
 <p th:text="${session.testSessionScope}"></p>
 <p th:text="${application.testApplicationScope}"></p>
 </body>

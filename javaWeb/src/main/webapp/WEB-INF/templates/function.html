@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <script type="text/javascript">
+        // function fun() {
+        //     console.log("无参数fun()被调用");
+        // }
+        // function hasParam(a,b) {
+        //     console.log("有参函数 fun2()被调用了 a=>"+a+",b=>"+b);
+        // }
+        // function sum(a,b) {
+        //     var sum = a+b;
+        //     return sum;
+        // }
+        //
+        // console.log("sun()方法返回:"+sum(1,2))
+        //
+        //
+        // var fun = function () {
+        //     console.log("无参数fun()被调用");
+        // };
+        // fun();
+        // var sum = function (a,b) {
+        //     return a+b;
+        // };
+        // console.log("sum()结果:"+sum(4,6))
+
+
+        function fun(a) {
+            alert( arguments.length );//可看参数个数
+            alert( arguments[0] );
+            alert( arguments[1] );
+            alert( arguments[2] );
+            alert("a = " + a);
+            for (var i = 0; i < arguments.length; i++){
+                console.log( arguments[i] );
+            }
+            // alert("无参函数 fun()");
+        }
+        fun(1,"ad",true);
+        // 需求：要求 编写 一个函数。用于计算所有参数相加的和并返回
+        function sum(num1,num2) {
+            var result = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                if (typeof(arguments[i]) == "number") {
+                    result += arguments[i];
+                }
+            }
+            return result;
+        }
+        console.log( sum(1,2,3,4,"abc",5,6,7,8,9) )
+    </script>
+<body>
+
+</body>
+</html>
